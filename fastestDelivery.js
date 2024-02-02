@@ -63,31 +63,3 @@ function findShortestTime(
 
     return Math.min(route1Time, route2Time);
 }
-
-// Assumptions of values for locations and preparation times
-const latAman = 12.971598;
-const lonAman = 77.594562;
-
-const latR1 = 12.934516;
-const lonR1 = 77.625664;
-const pt1 = 0.5; // Restaurant 1 preparation time in hours
-
-const latR2 = 12.908518;
-const lonR2 = 77.607324;
-const pt2 = 0.7; // Restaurant 2 preparation time in hours
-
-// Calculate the shortest time to finish the batch
-const shortestTime = findShortestTime(
-    latAman,
-    lonAman,
-    latR1,
-    lonR1,
-    pt1,
-    latR2,
-    lonR2,
-    pt2
-);
-
-console.log(
-    `Shortest time to finish the batch: ${shortestTime.toFixed(2)} hours`
-);
